@@ -3,7 +3,7 @@ pipeline {
   
   environment {
     build = "${currentBuild.number}"
-    def_paths= readJSON file: " ${WORKSPACE} \\build_jsondata.json"
+    def_paths= readJSON file: " ${WORKSPACE} //build_jsondata.json"
     def props = readJSON text: '{ "key": "value" }'
     }
     stages {
