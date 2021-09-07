@@ -3,7 +3,7 @@ pipeline {
   
   environment {
     build = "${currentBuild.number}"
-    def paths= readJSON file: " ${WORKSPACE} \\build_jsondata.json"
+    def paths= readJSON file: " ${WORKSPACE}\\build_jsondata.json"
     
     }
     stages {
