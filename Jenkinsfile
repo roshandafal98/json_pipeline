@@ -11,8 +11,7 @@ pipeline {
         steps{
           echo 'Build job Started first'
           
-          echo "${paths.Build.first}"
-          echo '[Build.first]'
+          echo "$[paths.Build.first]"
         }
       }  
      stage('Deploy'){
