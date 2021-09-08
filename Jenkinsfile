@@ -12,7 +12,7 @@ pipeline {
           echo 'Build job Started first'
           
           echo "[paths.Build.first]"
-          echo "${paths.Build.first}"
+          sh "echo ${Build.first}"
         }
       }  
      stage('Deploy'){
